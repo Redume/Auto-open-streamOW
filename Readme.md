@@ -5,10 +5,10 @@
 ### Проект сделали
 
 
-Мой Discord - Koteich#0754
+* Мой Discord - Koteich#0754
 
-[Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
+* [Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
 
-[Vasya775](https://github.com/Vasya775) - Помог с кодом
+* [Vasya775](https://github.com/Vasya775) - Помог с кодом
 
 * Мой [![Discord](https://discordapp.com/api/guilds/787320846405599273/widget.png)](https://discord.gg/skWQrNgXtS) сервер
