@@ -6,6 +6,7 @@
 
 
 Мой Discord - Koteich#0754
+
 [Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
 
 [Vasya775](https://github.com/Vasya775) - Помог с кодом
