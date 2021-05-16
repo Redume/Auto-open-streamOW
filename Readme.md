@@ -4,11 +4,11 @@
 ### Код недоделан! Я возможо деделаю но позже, кто хочет может доделать и написать в лс мне в дискорд
 ### Проект сделали
 
+[Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
 
-* Мой Discord - Koteich#0754
+[Vasya775](https://github.com/Vasya775) - Помог с кодом
 
-* [Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
+Мой Discord - Koteich#0754
 
-* [Vasya775](https://github.com/Vasya775) - Помог с кодом
+Мой [![Discord](https://discordapp.com/api/guilds/787320846405599273/widget.png)](https://discord.gg/skWQrNgXtS) сервер
 
-* Мой [![Discord](https://discordapp.com/api/guilds/787320846405599273/widget.png)](https://discord.gg/skWQrNgXtS) сервер
