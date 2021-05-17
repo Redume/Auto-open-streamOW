@@ -56,7 +56,7 @@ class Overwatch:
 			options = Options()
 			options.headless = True
 			driver = webdriver.Firefox(options=options, executable_path=r'C:\webDrivers\geckodriver.exe')
-			driver.get(self.contenders)
+			driver.get(self.league)
 			hr = ToastNotifier()
 
 			full_page = driver.page_source
