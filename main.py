@@ -26,41 +26,41 @@ class Overwatch:
 			soup = BeautifulSoup(full_page, "html.parser")
 			items = soup.find_all("h3", {"class": "video-playerstyles__LiveText-sc-14q9if3-9", "class": "iJdBvU"})
 
-			if items[0].text == "Live Now":
-				if isLive == True:
-					Logger.info("Стрим Overwatch Conteders успешно найден! Но скорей всего он уже открыт, я не стану открывать повторно страничку! Иду проверять Overwatch League \n"
-					f"Если страничка не открыта то вот ссылка - {self.contenders}")
+			if not len(items) == 0 and items[0].text == "Live Now":
+				if isLive:
+					Logger.info(
+						"Стрим Overwatch Conteders успешно найден! Но скорей всего он уже открыт, я не стану открывать повторно страничку! Иду проверять Overwatch League \n"
+						f"Если страничка не открыта то вот ссылка - {self.contenders}")
 					hr.show_toast("Успешно...", "Подробности смотреть в консоле")
-					driver.close()
+					driver.quit()
 
 					overwatchleague = Overwatch()
 					overwatchleague.league_parsing()
-
-				Logger.info("Стрим Overwatch Contenders найден! Открываю страничку")
-				hr.show_toast("Успешно!", "Стрим по Overwatch Contenders найден! Открываю страничку")
-				webbrowser.open(self.contenders)
-				driver.close()
-				isLive = True
-				overwatchleague = Overwatch()
-				overwatchleague.league_parsing()
+				if not isLive:
+					Logger.info("Стрим Overwatch Contenders найден! Открываю страничку")
+					hr.show_toast("Успешно!", "Стрим по Overwatch Contenders найден! Открываю страничку")
+					webbrowser.open(self.contenders)
+					driver.quit()
+					isLive = True
+					overwatchleague = Overwatch()
+					overwatchleague.league_parsing()
 
 			else:
-				Logger.error("Стрим по Overwatch Contenders не найден! Проверю через 5 минут")
+				Logger.error("Стрим по Overwatch Contenders не найден! Проверю через 5 минут, иду проверять Overwatch League")
 				hr.show_toast("Упс...", "Стрим по Overwatch Contenders не найден!")
-				driver.close()
-				time.sleep(300)
+				isLive = False
+				driver.quit()
 				overwatchleague = Overwatch()
+				overwatchleague.league_parsing()
+				time.sleep(300)
 				overwatchleague.contenders_parsing()
 
 		except Exception as err:
 			Logger.error("Произошла неизвестная ошибка! \n"
 						f"Ошибка - {err} \n"
-						"Открываю саппорт сервер через 3 секунды... \n"
-						"Советуем вам перезапустить код...")
+						"Перезапуск кода...")
 			hr.show_toast("Произошла ошибка", "Подробности смотреть в консоле!")
-
-			time.sleep(3)
-			webbrowser.open(self.support)
+			driver.quit()
 			overwatchleague = Overwatch()
 			overwatchleague.contenders_parsing()
 
@@ -78,38 +78,40 @@ class Overwatch:
 			items = soup.find_all("h3", {"class": "video-playerstyles__LiveText-sc-14q9if3-9", "class": "iJdBvU"})
 
 
-			if items[0].text == "Live Now":
-				if isLive == True:
+			if not len(items) == 0 and items[0].text == "Live Now":
+				if isLive:
 					Logger.info("Стрим Overwatch League успешно найден! Но скорей всего он уже открыт, я не стану открывать повторно страничку! Иду проверять Overwatch Conteders \n"
-					f"Если страничка не открыта то вот ссылка - {self.league}")
+								f"Если страничка не открыта то вот ссылка - {self.league}")
 					hr.show_toast("Успешно...", "Подробности смотреть в консоле")
-					driver.close()
+					driver.quit()
+
+					overwatchleague = Overwatch()
+					overwatchleague.contenders_parsing()
+				if not isLive:
+					Logger.info("Стрим Overwatch League найден! Открываю страничку")
+					hr.show_toast("Успешно!", "Стрим по Overwatch League найден! Открываю страничку")
+					webbrowser.open(self.contenders)
+					driver.quit()
+					isLive = True
 					overwatchleague = Overwatch()
 					overwatchleague.contenders_parsing()
 
-				Logger.info("Стрим Overwatch League найден! Открываю страничку")
-				hr.show_toast("Успешно!", "Стрим по Overwatch League найден! Открываю страничку")
-				webbrowser.open(self.league)
-				driver.close()
+			else:
+				Logger.error("Стрим по Overwatch League не найден! Проверю через 5 минут иду проверять Overwatch conteders")
+				hr.show_toast("Упс...", "Стрим по Overwatch League не найден!")
+				isLive = False
+				driver.quit()
 				overwatchleague = Overwatch()
 				overwatchleague.contenders_parsing()
-
-			else:
-				Logger.error("Стрим по Overwatch League не найден! Проверю через 5 минут")
-				hr.show_toast("Упс...", "Стрим по Overwatch League не найден!")
-				driver.close()
 				time.sleep(300)
-				overwatchleague = Overwatch()
 				overwatchleague.league_parsing()
 
 		except Exception as err:
 			Logger.error("Произошла неизвестная ошибка! \n"
 						f"Ошибка - {err} \n"
-						"Открываю саппорт сервер через 3 секунды... \n"
-						"Советуем вам перезапустить код...")
+						"Перезапуск кода...")
 			hr.show_toast("Произошла ошибка", "Подробности смотреть в консоле!")
-			time.sleep(3)
-			webbrowser.open(self.support)
+			driver.quit()
 			overwatchleague = Overwatch()
 			overwatchleague.league_parsing()
 
