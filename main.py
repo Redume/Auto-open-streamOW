@@ -17,7 +17,7 @@ class Overwatch:
 		try:
 			options = Options()
 			options.headless = True
-			driver = webdriver.Firefox(options=options, executable_path=r'C:\webDrivers\geckodriver.exe')
+			driver = webdriver.Firefox(options=options, executable_path=r'C:\webDrivers\geckodriver.exe') #Файл нужно добавить в патч, ищите в гугле под свой браузер
 			driver.get(self.contenders)
 			hr = ToastNotifier()
 			isLive = False
