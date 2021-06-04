@@ -7,7 +7,7 @@ from win10toast import ToastNotifier
 from utils.logger import Logger
 
 class Overwatch:
-    contenders = "https://overwatchleague.com/en-us/contenders"
+    	contenders = "https://overwatchleague.com/en-us/contenders"
 	league = "https://overwatchleague.com/en-us/"
 	support = "https://discord.com/invite/skWQrNgXtS"
 
