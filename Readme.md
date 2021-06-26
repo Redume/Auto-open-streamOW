@@ -11,4 +11,3 @@
 Мой Discord - Koteich#0754
 
 Мой [![Discord](https://discordapp.com/api/guilds/787320846405599273/widget.png)](https://discord.gg/skWQrNgXtS) сервер
-
