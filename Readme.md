@@ -1,13 +1,16 @@
-*Идея проекта* - проект посвещен игре Overwatch, у этой игры есть стримы как у твича за которые даются жетоны (Overwatch League) и скины (Overwatch Conteders), я хотел сделать что бы "бот" сам заходил когда они проходят что бы не тратить время...
+## Contributors ✨
+
+Спасибо за этот проект ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 
-### Код не доделан!
-### Проект сделали
-
-[Koteich](https://github.com/Koteich-dev) - Основатель этой идеии
-
-[Vasya775](https://github.com/Vasya775) - Помог с кодом
-
-Мой Discord - Koteich#0754
-
-Мой [![Discord](https://discordapp.com/api/guilds/787320846405599273/widget.png)](https://discord.gg/skWQrNgXtS) сервер
+<table>
+  <tr>
+   <td align="center"><a href="https://github.com/Redume"><img src="https://avatars.githubusercontent.com/u/49362257?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Redume</b></sub></a><br />
+     <a href="#code" title="Код">💻</a>
+    <a href="#ideas" title="Идеи">🤔</a></td>
+    
+       <td align="center"><a href="https://github.com/Redume"><img src="https://avatars.githubusercontent.com/u/49362257?v=3?s=100" width="100px;" alt=""/><br /><sub><b>Redume</b></sub></a><br />
+     <a href="#projectManagement" title="Код">💻</a>
+    <a href="#ideas" title="Идеи">🤔</a></td>
+ </tr>
+</table>
