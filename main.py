@@ -5,7 +5,7 @@ import time
 import webbrowser
 from win10toast import ToastNotifier
 from utils.logger import Logger
-
+#Здесь был Вася
 class Overwatch:
     	contenders = "https://overwatchleague.com/en-us/contenders"
 	league = "https://overwatchleague.com/en-us/"
