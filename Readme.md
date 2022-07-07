@@ -1,8 +1,5 @@
-## Contributors ✨
-
-Спасибо за этот проект ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-
+## ⚠️ Введется перезапись кода
+## Участники проекта ✨
 <table>
   <tr>
     <td align="center">
